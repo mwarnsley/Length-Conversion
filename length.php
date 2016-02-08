@@ -17,7 +17,14 @@
                 <label>From:</label>&nbsp;
                 <input type="text" name="from_value" value="" />&nbsp;
                 <select name="from_unit">
-                    <option>From Unit</option>
+                    <option value="inches">Inches</option>
+                    <option value="feet">Feet</option>
+                    <option value="yards">Yards</option>
+                    <option value="miles">Miles</option>
+                    <option value="millimeters">Millimeters</option>
+                    <option value="centimeters">Centimeters</option>
+                    <option value="meters">Meters</option>
+                    <option value="kilometers">Kilometers</option>
                 </select>
             </div>
 
