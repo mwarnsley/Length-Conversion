@@ -1,3 +1,21 @@
+<?php
+function convert_to_meters($value, $from_unit){
+    if($from_unit == 'feet'){
+        return $value * 0.3048;
+    }
+    return "Unsupported Unit.";
+}
+
+if($_POST['submit']){
+    $from_value = $_POST['from_value'];
+    $from_unit = $_POST['from_unit'];
+    $to_unit = $_POST['to_unit'];
+
+    $to_value = convert_to_meters($from_value, $from_unit);
+}
+
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -32,12 +50,12 @@
                 <label>To:</label>&nbsp;
                 <input type="text" name="to_value" value="" />&nbsp;
                 <select name="to_unit">
-                    <option>To Unit</option>
+                    <option value="meters"<?php if($_POST['to_unit'] === 'meters'){echo ' selected';}?>>Meters</option>
                 </select>
 
             </div>
 
-            <input type="submit" value="Submit" />
+            <input type="submit" value="Submit" name="submit"/>
         </form>
 
         <br />
