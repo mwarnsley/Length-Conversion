@@ -17,14 +17,14 @@
                 <label>From:</label>&nbsp;
                 <input type="text" name="from_value" value="" />&nbsp;
                 <select name="from_unit">
-                    <option value="inches">Inches</option>
-                    <option value="feet">Feet</option>
-                    <option value="yards">Yards</option>
-                    <option value="miles">Miles</option>
-                    <option value="millimeters">Millimeters</option>
-                    <option value="centimeters">Centimeters</option>
-                    <option value="meters">Meters</option>
-                    <option value="kilometers">Kilometers</option>
+                    <option value="inches"<?php if($_POST['from_unit'] === 'inches'){echo ' selected';}?>>Inches</option>
+                    <option value="feet"<?php if($_POST['from_unit'] === 'feet'){echo ' selected';}?>>Feet</option>
+                    <option value="yards"<?php if($_POST['from_unit'] === 'yards'){echo ' selected';}?>>Yards</option>
+                    <option value="miles"<?php if($_POST['from_unit'] === 'miles'){echo ' selected';}?>>Miles</option>
+                    <option value="millimeters"<?php if($_POST['from_unit'] === 'millimeters'){echo ' selected';}?>>Millimeters</option>
+                    <option value="centimeters"<?php if($_POST['from_unit'] === 'centimeters'){echo ' selected';}?>>Centimeters</option>
+                    <option value="meters"<?php if($_POST['from_unit'] === 'meters'){echo ' selected';}?>>Meters</option>
+                    <option value="kilometers"<?php if($_POST['from_unit'] === 'kilometers'){echo ' selected';}?>>Kilometers</option>
                 </select>
             </div>
 
